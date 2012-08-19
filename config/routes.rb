@@ -1,5 +1,6 @@
 Customimage::Application.routes.draw do
-  get "pages/about"
+  match '/',          to: 'customize#index'
+  match '/about',     to: 'pages#about'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
